@@ -9,9 +9,9 @@
     <link rel="Stylesheet" href="StyleSheet.css" type="text/css" />
 </head>
 <body>
-<div>
-    <h1>Jewelry Store</h1>
-    <uc:navigation ID="navigation" runat="server" />
-</div>
+    <div>
+        <h1 style="font-weight:bold;">Jewelry Store</h1>
+        <uc:navigation ID="navigation" runat="server" />
+    </div>
 </body>
 </html>
