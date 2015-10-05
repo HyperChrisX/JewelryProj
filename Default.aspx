@@ -12,7 +12,6 @@
 <div>
     <h1>Jewelry Store</h1>
     <uc:navigation ID="navigation" runat="server" />
-
 </div>
 </body>
 </html>
