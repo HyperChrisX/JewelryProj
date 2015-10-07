@@ -6,6 +6,5 @@
     <li class="nav"><a href="Default.aspx">Home</a></li>
     <li class="nav"><a href="contact.aspx">Contact</a></li>
     <li class="nav"><a href="aboutus.aspx">About Us</a></li>
-    &nbsp;&nbsp;
 </ul>
 </div>

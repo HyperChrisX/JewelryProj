@@ -3,6 +3,34 @@
     font: Segoe UI, Arial, sans-serif;
     background-color: lightgrey;
 }
+a:link
+{
+    font-style:italic;
+    color:white;
+    text-decoration:none;
+    padding: 2px 2px 2px 2px;
+    background-color:darkslategray;
+}
+a:visited
+{
+    font-style:normal;
+    color:silver;
+    text-decoration:none;
+    background-color:dimgray;
+}
+a:hover
+{
+    color:lightgrey;
+    background-color:lightcyan;
+}
+a:active
+{
+    font-weight:bold;
+    font-style:normal;
+    text-decoration:underline;
+    color:orangered;
+    background-color:cadetblue;
+}
 asp{
     padding: 5px 7px 5px 7px;
 }
@@ -20,10 +48,8 @@ ul#navi
     border: none;
     display: inline;
     margin: 5px 7px 5px;
-    background-color: white;
     color: black;
     padding: 5px 7px 5px;
-    background-color: grey;
 }
 div
 {
