@@ -97,12 +97,6 @@ public partial class contact : System.Web.UI.Page
                         + "<p><strong>To</strong>: &lt;"
                         + toAddress
                         + "&gt;</p>"
-                        + "<p><strong>CC</strong>: &lt;"
-                        + ccAddress
-                        + "&gt;</p>"
-                        + "<p><strong>BCC</strong>: &lt;"
-                        + bccAddress
-                        + "&gt;</p>"
                         + "<p><strong>Subject</strong>: "
                         + emailMessage.Subject
                         + "</p>"

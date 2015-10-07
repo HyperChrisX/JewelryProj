@@ -3,20 +3,26 @@
     font: Segoe UI, Arial, sans-serif;
     background-color: lightgrey;
 }
+asp{
+    padding: 5px 7px 5px 7px;
+}
 h2
+{
+    text-align:center;
+}
+ul#navi
 {
     text-align:center;
 }
 .nav
 {
-    text-align: center;
     text-decoration: none;
     border: none;
     display: inline;
     margin: 5px 7px 5px;
     background-color: white;
     color: black;
-    padding: 5px 7px 5px 7px;
+    padding: 5px 7px 5px;
     background-color: grey;
 }
 div
