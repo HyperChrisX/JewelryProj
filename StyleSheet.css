@@ -3,7 +3,10 @@
     font: Segoe UI, Arial, sans-serif;
     background-color: lightgrey;
 }
-
+h2
+{
+    text-align:center;
+}
 .nav
 {
     text-align: center;
