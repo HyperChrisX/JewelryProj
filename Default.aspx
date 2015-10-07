@@ -10,6 +10,7 @@
 </head>
 <body>
 <div>
+    <p><img src="Logo_Jewlry.jpg" alt="logo_image" /></p>
     <h1>Jewelry Store</h1>
     <uc:navigation ID="navigation" runat="server" />
 </div>
