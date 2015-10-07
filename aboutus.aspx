@@ -10,9 +10,7 @@
 </head>
 <body>
     <div>
-        <h1 style="font-weight:bold;">Jewelry Store</h1>
         <uc:navigation ID="navigation" runat="server" />
-        
     </div>
 </body>
 </html>
