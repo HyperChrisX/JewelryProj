@@ -13,30 +13,27 @@
     <uc:navigation ID="navigation" runat="server" />
     <h1>Our Products</h1>
 </div>
-    <div>
-        <table class="table" cellpadding="2" cellspacing="4">
-            <tr>
-                <th class="title">This is just a test</th> <!-- title -->
-                <td class="product">The rest are products</td> <!-- product -->
-                <td class="product">The rest are products</td> <!-- product -->
-                <td class="product">The rest are products</td> <!-- product -->
-                <td class="product">The rest are products</td> <!-- product -->
-            </tr>
-            <tr>
-                <th class="title">This is just a test</th><!-- title -->
-                <td class="product">The rest are products</td> <!-- product -->
-                <td class="product">The rest are products</td> <!-- product -->
-                <td class="product">The rest are products</td> <!-- product -->
-                <td class="product">The rest are products</td> <!-- product -->
-            </tr>
-            <tr>
-                <th class="title">This is just a test</th><!-- title -->
-                <td class="product">The rest are products</td> <!-- product -->
-                <td class="product">The rest are products</td> <!-- product -->
-                <td class="product">The rest are products</td> <!-- product -->
-                <td class="product">The rest are products</td> <!-- product -->
-            </tr>
-        </table>
+    <div class="prod">
+        <ul class="prodlist">
+                <li class="title">This is just a test</li> <!-- title -->
+            
+                <li class="product">The rest are products</li> <!-- product -->    
+                <li class="product">The rest are products</li> <!-- product -->   
+                <li class="product">The rest are products</li> <!-- product -->
+            
+                <li class="title">This is just a test</li> <!-- title -->
+
+                <li class="product">The rest are products</li> <!-- product -->
+                <li class="product">The rest are products</li> <!-- product -->    
+                <li class="product">The rest are products</li> <!-- product -->
+                            
+                <li class="title">This is just a test</li> <!-- title -->
+                
+                <li class="product">The rest are products</li> <!-- product -->
+                <li class="product">The rest are products</li> <!-- product -->
+                <li class="product">The rest are products</li> <!-- product -->
+
+        </ul>
     </div>
 </body>
 </html>
