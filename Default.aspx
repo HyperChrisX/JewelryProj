@@ -13,7 +13,7 @@
     <uc:navigation ID="navigation" runat="server" />
 </div>
     <div>
-        <table class="table" cellpadding="2" cellspacing="4">
+        <table class="table" cellpadding="2" cellspacing="4" border="1" >
             <tr>
                 <th class="title">This is just a test</th> <!-- title -->
             </tr>
@@ -61,5 +61,8 @@
             </tr>
         </table>
     </div>
+    <ul>
+        This is just a test
+    </ul>
 </body>
 </html>
