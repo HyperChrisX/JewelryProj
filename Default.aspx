@@ -11,58 +11,29 @@
 <body>
 <div>
     <uc:navigation ID="navigation" runat="server" />
+    <h1>Our Products</h1>
 </div>
-    <div>
-        <table class="table" cellpadding="2" cellspacing="4" border="1" >
-            <tr>
-                <th class="title">This is just a test</th> <!-- title -->
-            </tr>
-            <tr>
-                <th class="product">The rest are products</th> <!-- product -->
-            </tr>
-            <tr>
-                <th class="product">The rest are products</th> <!-- product -->
-            </tr>
-            <tr>
-                <th class="product">The rest are products</th> <!-- product -->
-            </tr>
-            <tr>
-                <th class="product">The rest are products</th> <!-- product -->
-            </tr>
-             <tr>
-                <th class="title">This is just a test</th><!-- title -->
-            </tr>
-            <tr>
-                <th class="product">The rest are products</th> <!-- product -->
-            </tr>
-            <tr>
-                <th class="product">The rest are products</th> <!-- product -->
-            </tr>
-            <tr>
-                <th class="product">The rest are products</th> <!-- product -->
-            </tr>
-            <tr>
-                <th class="product">The rest are products</th> <!-- product -->
-            </tr>
-            <tr>
-                <th class="title">This is just a test</th><!-- title -->
-            </tr>
-            <tr>
-                <th class="product">The rest are products</th> <!-- product -->
-            </tr>
-            <tr>
-                <th class="product">The rest are products</th> <!-- product -->
-            </tr>
-            <tr>
-                <th class="product">The rest are products</th> <!-- product -->
-            </tr>
-            <tr>
-                <th class="product">The rest are products</th> <!-- product -->
-            </tr>
-        </table>
+    <div class="prod">
+        <ul class="prodlist">
+                <li class="title">This is just a test</li> <!-- title -->
+            
+                <li class="product">The rest are products</li> <!-- product -->    
+                <li class="product">The rest are products</li> <!-- product -->   
+                <li class="product">The rest are products</li> <!-- product -->
+            
+                <li class="title">This is just a test</li> <!-- title -->
+
+                <li class="product">The rest are products</li> <!-- product -->
+                <li class="product">The rest are products</li> <!-- product -->    
+                <li class="product">The rest are products</li> <!-- product -->
+                            
+                <li class="title">This is just a test</li> <!-- title -->
+                
+                <li class="product">The rest are products</li> <!-- product -->
+                <li class="product">The rest are products</li> <!-- product -->
+                <li class="product">The rest are products</li> <!-- product -->
+
+        </ul>
     </div>
-    <ul>
-        This is just a test
-    </ul>
 </body>
 </html>

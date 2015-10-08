@@ -1,44 +1,78 @@
 ﻿body 
 {
     font: Segoe UI, Arial, sans-serif;
-    background-color: silver;
+    background-color: lightgrey;
 }
-
+div.prod
+{
+    text-align:left;
+}
+a:link
+{
+    font-style:italic;
+    color:white;
+    text-decoration:none;
+    padding: 2px 2px 2px 2px;
+    background-color:darkslategray;
+}
+a:visited
+{
+    font-style:normal;
+    color:silver;
+    text-decoration:none;
+    background-color:dimgray;
+}
+a:hover
+{
+    color:lightgrey;
+    background-color:lightcyan;
+}
+a:active
+{
+    font-weight:bold;
+    font-style:normal;
+    text-decoration:underline;
+    color:orangered;
+    background-color:cadetblue;
+}
+asp{
+    padding: 5px 7px 5px 7px;
+}
+h2
+{
+    text-align:center;
+}
+ul#navi
+{
+    text-align:center;
+}
 .nav
 {
-    text-align: center;
     text-decoration: none;
     border: none;
     display: inline;
     margin: 5px 7px 5px;
-    background-color: white;
     color: black;
-    padding: 5px 7px 5px 7px;
-    background-color: grey;
+    padding: 5px 7px 5px;
 }
 div
 {
     text-align:center;
 }
-table.table
-{
-    padding: 5px 5px 7px 420px;
-}
-th.title
+.title
 {
     font: bold;
     font-size: large;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding-bottom: 7px;
 }
-th.product 
+.product 
 {
     font: normal;
     font-size: medium;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding-bottom: 7px;
 }
-a:hover 
+.prodlist 
 {
-    font: blue;
+    list-style-type: none;
+    margin-left: 15%;
 }

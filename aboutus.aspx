@@ -12,5 +12,20 @@
     <div>
         <uc:navigation ID="navigation" runat="server" />
     </div>
+    <br />
+    <div>
+        <h1>
+            About Us
+        </h1>
+        <h2 style="text-align:left;">Nhia</h2>
+        <img />
+        <p>
+
+        </p>
+        <h2 style="text-align:right;">Christian</h2>
+        <p>
+
+        </p>
+    </div>
 </body>
 </html>
