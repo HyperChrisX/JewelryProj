@@ -35,5 +35,12 @@
 
         </ul>
     </div>
+    <div>
+        <table class="Jewelry_1">
+            <tr>
+                <th>Random Jewelry</th>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
