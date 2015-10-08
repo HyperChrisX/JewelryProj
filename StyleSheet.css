@@ -73,4 +73,5 @@ li.product
 {
     list-style-type: none;
     margin-left: 15%;
+    float:left;
 }
