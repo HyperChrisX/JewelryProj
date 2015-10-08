@@ -35,12 +35,20 @@
 
         </ul>
     </div>
-    <div>
-    <h1 class="Jewelry_1">Random Name</h1>
-    </div>
      <p><img src="image_1.png" alt="image_1" class="image_1" /></p>  
-    <div>
     <h1 class="Jewelry_1">Random Name</h1>
-    </div>
+    <p style="text-align:left; margin-left:15%; margin-right:15%; margin-top:6%;">
+        Lorizzle ipsum we gonna chung yippiyo gangster, consectetizzle adipiscing check it out. Mofo sapien velizzle, that's the
+         shizzle volutpizzle, suscipit shizzlin dizzle, gravida vizzle, arcu. Pellentesque eget yippiyo. Sizzle erizzle.
+        Price = $$$
+    </p>
+    <br />
+    <p><img src="image_2.png" alt="image_2" class="image_1" /></p> 
+    <h1 class="Jewelry_1">Random Name</h1>
+    <p style="text-align:right; margin-right:15%; margin-left:15%; margin-top:6%;">
+        Lorizzle ipsum we gonna chung yippiyo gangster, consectetizzle adipiscing check it out. Mofo sapien velizzle, that's the
+         shizzle volutpizzle, suscipit shizzlin dizzle, gravida vizzle, arcu. Pellentesque eget yippiyo. Sizzle erizzle.
+        Price = $$$
+    </p>
 </body>
 </html>
