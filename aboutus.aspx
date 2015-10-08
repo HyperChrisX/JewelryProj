@@ -17,15 +17,17 @@
         <h1>
             About Us
         </h1>
-        <h2 style="text-align:left;">Nhia</h2>
-        <img />
-        <p>
-
-        </p>
-        <h2 style="text-align:right;">Christian</h2>
-        <p>
-
-        </p>
     </div>
-</body>
+        <h2 style="text-align:left; margin-left:15%">Nhia</h2>
+        <div style="text-align:right; display:inline; margin-right:15%; margin-left:10px;"><img src="nhia.jpg" alt="Nhia" /></div>
+        <p style="text-align:left;margin-left:15%">
+            Descriptions go here.
+        </p>
+  
+        <h2 style="text-align:right; margin-right:15%">Christian</h2>
+        <div style="text-align:left; display:inline; margin-left:15%; margin-right:10px;"><img src="christian.jpg" alt="Christian"/></div>
+        <p style="text-align:right; margin-right:15%">
+            Descriptions go here.
+        </p>
+    </body>
 </html>
