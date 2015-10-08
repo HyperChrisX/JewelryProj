@@ -36,11 +36,11 @@
         </ul>
     </div>
     <div>
-        <table class="Jewelry_1">
-            <tr>
-                <th>Random Jewelry</th>
-            </tr>
-        </table>
+    <h1 class="Jewelry_1">Random Name</h1>
+    </div>
+     <p><img src="image_1.png" alt="image_1" class="image_1" /></p>  
+    <div>
+    <h1 class="Jewelry_1">Random Name</h1>
     </div>
 </body>
 </html>
