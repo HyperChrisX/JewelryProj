@@ -11,53 +11,30 @@
 <body>
 <div>
     <uc:navigation ID="navigation" runat="server" />
+    <h1>Our Products</h1>
 </div>
     <div>
         <table class="table" cellpadding="2" cellspacing="4">
             <tr>
                 <th class="title">This is just a test</th> <!-- title -->
-            </tr>
-            <tr>
-                <th class="product">The rest are products</th> <!-- product -->
-            </tr>
-            <tr>
-                <th class="product">The rest are products</th> <!-- product -->
-            </tr>
-            <tr>
-                <th class="product">The rest are products</th> <!-- product -->
-            </tr>
-            <tr>
-                <th class="product">The rest are products</th> <!-- product -->
-            </tr>
-             <tr>
-                <th class="title">This is just a test</th><!-- title -->
-            </tr>
-            <tr>
-                <th class="product">The rest are products</th> <!-- product -->
-            </tr>
-            <tr>
-                <th class="product">The rest are products</th> <!-- product -->
-            </tr>
-            <tr>
-                <th class="product">The rest are products</th> <!-- product -->
-            </tr>
-            <tr>
-                <th class="product">The rest are products</th> <!-- product -->
+                <td class="product">The rest are products</td> <!-- product -->
+                <td class="product">The rest are products</td> <!-- product -->
+                <td class="product">The rest are products</td> <!-- product -->
+                <td class="product">The rest are products</td> <!-- product -->
             </tr>
             <tr>
                 <th class="title">This is just a test</th><!-- title -->
+                <td class="product">The rest are products</td> <!-- product -->
+                <td class="product">The rest are products</td> <!-- product -->
+                <td class="product">The rest are products</td> <!-- product -->
+                <td class="product">The rest are products</td> <!-- product -->
             </tr>
             <tr>
-                <th class="product">The rest are products</th> <!-- product -->
-            </tr>
-            <tr>
-                <th class="product">The rest are products</th> <!-- product -->
-            </tr>
-            <tr>
-                <th class="product">The rest are products</th> <!-- product -->
-            </tr>
-            <tr>
-                <th class="product">The rest are products</th> <!-- product -->
+                <th class="title">This is just a test</th><!-- title -->
+                <td class="product">The rest are products</td> <!-- product -->
+                <td class="product">The rest are products</td> <!-- product -->
+                <td class="product">The rest are products</td> <!-- product -->
+                <td class="product">The rest are products</td> <!-- product -->
             </tr>
         </table>
     </div>
