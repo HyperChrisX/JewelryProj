@@ -59,15 +59,15 @@ div
 {
     text-align:center;
 }
-.title
+li.title
 {
-    font: bold;
+    font-weight: bold;
     font-size: large;
     padding-bottom: 7px;
 }
-.product 
+li.product 
 {
-    font: normal;
+    font-weight: normal;
     font-size: medium;
     padding-bottom: 7px;
 }

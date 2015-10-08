@@ -19,15 +19,23 @@
         </h1>
     </div>
         <h2 style="text-align:left; margin-left:15%">Nhia</h2>
-        <div style="text-align:right; display:inline; margin-right:15%; margin-left:10px;"><img src="nhia.jpg" alt="Nhia" /></div>
+        <div style="float:right; margin-right:15%; margin-left:10px;"><img src="Logo_Jewlry.jpg" alt="Nhia" /></div>
         <p style="text-align:left;margin-left:15%">
-            Descriptions go here.
+            Lorem shit dolor sit amizzle, fizzle adipiscing elit. Dang sapizzle velizzle, aliquet volutpat, suscipit pot, gravida check it out, 
+            uhuh ... yih!. Dizzle eget tortizzle. Sed eros. Funky fresh at dolor dapibus turpis tempus funky fresh. Maurizzle pellentesque dawg 
+            ass shiz. Get down get down in tortor. Pellentesque mammasay mammasa mamma oo sa rhoncus nisi. I'm in the shizzle hac habitasse platea dictumst. 
+            Donec dapibizzle. Curabitizzle tellus urna, pretizzle that's the shizzle, doggy ac, eleifend vitae, nunc. Shut the shizzle up suscipizzle. 
+            Pizzle shiz yippiyo sed we gonna chung.
         </p>
   
         <h2 style="text-align:right; margin-right:15%">Christian</h2>
-        <div style="text-align:left; display:inline; margin-left:15%; margin-right:10px;"><img src="christian.jpg" alt="Christian"/></div>
+        <div style="float:left; margin-left:15%; margin-right:10px;"><img src="christian.jpg" alt="Christian"/></div>
         <p style="text-align:right; margin-right:15%">
-            Descriptions go here.
+            Lorem shit dolor sit amizzle, fizzle adipiscing elit. Dang sapizzle velizzle, aliquet volutpat, suscipit pot, gravida check it out, 
+            uhuh ... yih!. Dizzle eget tortizzle. Sed eros. Funky fresh at dolor dapibus turpis tempus funky fresh. Maurizzle pellentesque dawg 
+            ass shiz. Get down get down in tortor. Pellentesque mammasay mammasa mamma oo sa rhoncus nisi. I'm in the shizzle hac habitasse platea dictumst. 
+            Donec dapibizzle. Curabitizzle tellus urna, pretizzle that's the shizzle, doggy ac, eleifend vitae, nunc. Shut the shizzle up suscipizzle. 
+            Pizzle shiz yippiyo sed we gonna chung.
         </p>
     </body>
 </html>
