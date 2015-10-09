@@ -45,7 +45,7 @@
     <br />
     <p><img src="image_2.png" alt="image_2" class="image_2" /></p> 
     <h1 class="Jewelry_2">Random Name</h1>
-    <p style="text-align:right; margin-left:15%; margin-left:15%; margin-top:6%;">
+    <p style="text-align:right; margin-right:15%; margin-left:15%; margin-top:6%;">
         Lorizzle ipsum we gonna chung yippiyo gangster, consectetizzle adipiscing check it out. Mofo sapien velizzle, that's the
          shizzle volutpizzle, suscipit shizzlin dizzle, gravida vizzle, arcu. Pellentesque eget yippiyo. Sizzle erizzle.
         Price = $$$
