@@ -26,7 +26,8 @@
             Kansas for a few years. Then I moved to Michigan during partially of my fifth grade. During my middle school I moved back here and here I am. 
             I had a great adventure. I was about to go into networking, but I notice that I didn't like it anymore because I was about to be force into
             a job that I didn't like. I transfered over to this program... Now I love it. I would like to mention that when I was little I already knew
-            what I wanted to be. Well, this program help me get into what I want to be and that is... to be a game creator. So yeah!!!!!
+            what I wanted to be. Well, this program help me get into what I want to be and that is... to be a game creator. So yeah!!!!! Also, Christian
+            (See below) is a hugh fan of Microsoft. As for me... I hate Apple!!! (Not really, just the phone).
         </p>
     <br />
         <h2 style="text-align:right; margin-right:15%">Christian</h2>
