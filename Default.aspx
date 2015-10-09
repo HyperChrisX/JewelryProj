@@ -17,21 +17,21 @@
         <ul class="prodlist">
                 <li class="title">This is just a test</li> <!-- title -->
             
-                <li class="product"><a href="#" class="prodlink">The rest are products</a></li> <!-- product -->    
-                <li class="product"><a href="#" class="prodlink">The rest are products</a></li> <!-- product -->   
-                <li class="product"><a href="#" class="prodlink">The rest are products</a></li> <!-- product -->
+                <li class="product"><a href="#" class="prodlink">The rest are products</a></li> <!-- product that user can see or choose -->    
+                <li class="product"><a href="#" class="prodlink">The rest are products</a></li> <!-- product that user can see or choose -->      
+                <li class="product"><a href="#" class="prodlink">The rest are products</a></li> <!-- product that user can see or choose -->    
             
                 <li class="title">This is just a test</li> <!-- title -->
 
-                <li class="product"><a href="#" class="prodlink">The rest are products</a></li> <!-- product -->
-                <li class="product"><a href="#" class="prodlink">The rest are products</a></li> <!-- product -->    
-                <li class="product"><a href="#" class="prodlink">The rest are products</a></li> <!-- product -->
+                <li class="product"><a href="#" class="prodlink">The rest are products</a></li> <!-- product that user can see or choose -->    
+                <li class="product"><a href="#" class="prodlink">The rest are products</a></li> <!-- product that user can see or choose -->       
+                <li class="product"><a href="#" class="prodlink">The rest are products</a></li> <!-- product that user can see or choose -->    
                             
                 <li class="title">This is just a test</li> <!-- title -->
                 
-                <li class="product"><a href="#" class="prodlink">The rest are products</a></li> <!-- product -->
-                <li class="product"><a href="#" class="prodlink">The rest are products</a></li> <!-- product -->
-                <li class="product"><a href="#" class="prodlink">The rest are products</a></li> <!-- product -->
+                <li class="product"><a href="#" class="prodlink">The rest are products</a></li> <!-- product that user can see or choose -->    
+                <li class="product"><a href="#" class="prodlink">The rest are products</a></li> <!-- product that user can see or choose -->    
+                <li class="product"><a href="#" class="prodlink">The rest are products</a></li> <!-- product that user can see or choose -->    
 
         </ul>
     </div>
