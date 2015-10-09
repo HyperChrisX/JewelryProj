@@ -34,7 +34,7 @@
         <p style="text-align:right; margin-right:15%; margin-left:15%;"> <!-- Move text to the right -->
             My name is Christian Saltness. I am also a student at Dunwoody College of Techology and currently reside in Minnesota. I am 19 years old and have lived here
             all my life. I am a huge geek and fan of technology, and have been a big Microsoft fan for a while. I want to be able to do something involving coding or 
-            other web design, networking, programming things and that is how I'e ended up here at Dunwoody. I am also slgihtly interested in cars, but technology is usually
+            other web design, networking, programming things and that is how I'e ended up here at Dunwoody. I am also slightly interested in cars, but technology is usually
             what I keep the closest eye on, following new announcements in OS, phones, tablets, and more. I have built a few websites in the past, but none are currently
             hosted online. This site is a collaboration between myself and Nhia (see above).
         </p>
