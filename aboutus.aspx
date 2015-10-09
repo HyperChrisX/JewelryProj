@@ -10,17 +10,17 @@
 </head>
 <body>
     <div>
-        <uc:navigation ID="navigation" runat="server" />
+        <uc:navigation ID="navigation" runat="server" /> <!-- navigation -->
     </div>
     <br />
     <div>
         <h1>
-            About Us
+            About Us <!-- About us title -->
         </h1>
     </div>
-        <h2 style="text-align:left; margin-left:15%">Nhia</h2>
-        <div style="float:right; margin-right:15%; margin-left:20px; margin-bottom:20px"><img src="aboutPic.jpg" alt="Us. In digital format" /></div>
-        <p style="text-align:left;margin-left:15%">
+        <h2 style="text-align:left; margin-left:15%">Nhia</h2><!-- Name of the creator -->
+        <div style="float:right; margin-right:15%; margin-left:20px; margin-bottom:20px"><img src="aboutPic.jpg" alt="Us. In digital format" /></div> <!-- Images of us -->
+        <p style="text-align:left;margin-left:15%"> <!-- Move text to the left -->
             My name is Nhia Yang. I'm a Student at Dunwoody College of Technology and I'll be graduating in the spring of 2016. I decided to create a website
             like this because... It just came into mind. I'm from originally Minnesota, but I moved around. I lived here for my childhood then moved to 
             Kansas for a few years. Then I moved to Michigan during partially of my fifth grade. During my middle school I moved back here and here I am. 
@@ -30,8 +30,8 @@
             (See below) is a hugh fan of Microsoft. As for me... I hate Apple!!! (Not really, just the phone).
         </p>
     <br />
-        <h2 style="text-align:right; margin-right:15%">Christian</h2>
-        <p style="text-align:right; margin-right:15%; margin-left:15%;">
+        <h2 style="text-align:right; margin-right:15%">Christian</h2> <!-- Name of the creator -->
+        <p style="text-align:right; margin-right:15%; margin-left:15%;"> <!-- Move text to the right -->
             My name is Christian Saltness. I am also a student at Dunwoody College of Techology and currently reside in Minnesota. I am 19 years old and have lived here
             all my life. I am a huge geek and fan of technology, and have been a big Microsoft fan for a while. I want to be able to do something involving coding or 
             other web design, networking, programming things and that is how I'e ended up here at Dunwoody. I am also slgihtly interested in cars, but technology is usually
