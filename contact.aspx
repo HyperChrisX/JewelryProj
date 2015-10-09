@@ -16,24 +16,24 @@
     <h2>Send us a message below!</h2>
     <h4 style="text-align:center;font-style:italic;"><a style="color:red;">**</a> indicates a required field</h4>
         <div>
-            <asp:Panel ID="emailForm" runat="server">
+            <asp:Panel ID="emailForm" runat="server"> <!-- begin email form-->
                     <br />
                         <asp:RequiredFieldValidator ID="nameValidator" runat="server" ErrorMessage="**" ControlToValidate="senderName">**</asp:RequiredFieldValidator>Sender's Name:
-                        <asp:TextBox ID="senderName" runat="server" Width="255px" />
+                        <asp:TextBox ID="senderName" runat="server" Width="255px" /> <!--textbox for sender name-->
                     <br /><br />
-                        <asp:RequiredFieldValidator ID="fromValidator" runat="server" ErrorMessage="RequiredFieldValidator"
-                            ControlToValidate="senderEmail">**</asp:RequiredFieldValidator>Sender's E-mail:
-                        <asp:TextBox ID="senderEmail" runat="server" Width="255px" />
+                        <asp:RequiredFieldValidator ID="fromValidator" runat="server" ErrorMessage="RequiredFieldValidator" 
+                            ControlToValidate="senderEmail">**</asp:RequiredFieldValidator>Sender's E-mail: <!-- ^validators work correctly-->
+                        <asp:TextBox ID="senderEmail" runat="server" Width="255px" /><!--text box for sender email-->
                     <br /><br />
                         <asp:RequiredFieldValidator ID="subjectValidator" runat="server" ErrorMessage="RequiredFieldValidator"
                             ControlToValidate="subject">**</asp:RequiredFieldValidator>Subject:
-                        <asp:TextBox ID="subject" runat="server" Width="255px" />
+                        <asp:TextBox ID="subject" runat="server" Width="255px" /> <!-- text box for subject-->
                     <br /><br />
                         <asp:RequiredFieldValidator ID="messageValidator" runat="server" ErrorMessage="RequiredFieldValidator"
                             ControlToValidate="message">**</asp:RequiredFieldValidator>Message:
-                        <asp:TextBox ID="message" runat="server" Width="255px" TextMode="MultiLine" Height="80px" />
+                        <asp:TextBox ID="message" runat="server" Width="255px" TextMode="MultiLine" Height="80px" /><!--textbox for message-->
                     <br /><br />
-                        <asp:Button ID="submitImage" runat="server" Text="Submit"></asp:Button>
+                        <asp:Button ID="submitImage" runat="server" Text="Submit"></asp:Button> <!-- throws an error currently when sending, port denied...-->
             </asp:Panel>
             <asp:Literal ID="sentEmail" runat="server" Visible="False">
             </asp:Literal>
