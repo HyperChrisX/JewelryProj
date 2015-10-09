@@ -31,11 +31,11 @@
     <br />
         <h2 style="text-align:right; margin-right:15%">Christian</h2>
         <p style="text-align:right; margin-right:15%; margin-left:15%;">
-            Lorem shit dolor sit amizzle, fizzle adipiscing elit. Dang sapizzle velizzle, aliquet volutpat, suscipit pot, gravida check it out, 
-            uhuh ... yih!. Dizzle eget tortizzle. Sed eros. Funky fresh at dolor dapibus turpis tempus funky fresh. Maurizzle pellentesque dawg 
-            ass shiz. Get down get down in tortor. Pellentesque mammasay mammasa mamma oo sa rhoncus nisi. I'm in the shizzle hac habitasse platea dictumst. 
-            Donec dapibizzle. Curabitizzle tellus urna, pretizzle that's the shizzle, doggy ac, eleifend vitae, nunc. Shut the shizzle up suscipizzle. 
-            Pizzle shiz yippiyo sed we gonna chung.
+            My name is Christian Saltness. I am also a student at Dunwoody College of Techology and currently reside in Minnesota. I am 19 years old and have lived here
+            all my life. I am a huge geek and fan of technology, and have been a big Microsoft fan for a while. I want to be able to do something involving coding or 
+            other web design, networking, programming things and that is how I'e ended up here at Dunwoody. I am also slgihtly interested in cars, but technology is usually
+            what I keep the closest eye on, following new announcements in OS, phones, tablets, and more. I have built a few websites in the past, but none are currently
+            hosted online. This site is a collaboration between myself and Nhia (see above).
         </p>
     </body>
 </html>

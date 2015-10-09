@@ -15,11 +15,9 @@ public partial class contact : System.Web.UI.Page
         if (Page.IsValid)
         {
             string toAddress = "cj55448@hotmail.com";
-            string ccAddress = "";
-            string bccAddress = "";
+            
             string[] toArray = toAddress.Split(',');
-            string[] ccArray = ccAddress.Split(',');
-            string[] bccArray = bccAddress.Split(',');
+            
             if (validateAddress(senderEmail.Text) == false)
             {
                 emailForm.Visible = false;
@@ -36,23 +34,6 @@ public partial class contact : System.Web.UI.Page
                         + " by clicking your browser's back button and updating the "
                         + " information.";
             }
-            else if (ccAddress.Length > 0 && !checkAddresses(ccArray))
-            {
-                emailForm.Visible = false;
-                sentEmail.Visible = true;
-                sentEmail.Text = "You have issues in your cc addresses. Please fix"
-                        + " by clicking your browser's back button and updating the "
-                        + " information.";
-            }
-            else if (bccAddress.Length > 0 && !checkAddresses(bccArray))
-            {
-                emailForm.Visible = false;
-                sentEmail.Visible = true;
-                sentEmail.Text = "You have issues in your bcc addresses. Please fix"
-                        + " by clicking your browser's back button and updating the "
-                        + " information.";
-            }
-
 
             else
             {
