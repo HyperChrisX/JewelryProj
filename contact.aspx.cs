@@ -63,14 +63,15 @@ public partial class contact : System.Web.UI.Page
                 emailMessage.Subject = messageSubject;
                 emailMessage.Body = messageBody;
 
-                SmtpClient mailClient = new SmtpClient("localhost");
+                SmtpClient mailClient = new SmtpClient("localhost",25);
                 mailClient.UseDefaultCredentials = true;
+                mailClient.DeliveryMethod = SmtpDeliveryMethod.Network;
                 try {
                     mailClient.Send(emailMessage);
                 }
                 catch (Exception ex)
                 {
-                    Message("Something Went Wrong.");
+                    Message(ex.Message);
                 }
 
                 emailForm.Visible = false;
