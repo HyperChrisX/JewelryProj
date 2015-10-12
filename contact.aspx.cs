@@ -63,9 +63,15 @@ public partial class contact : System.Web.UI.Page
                 emailMessage.Subject = messageSubject;
                 emailMessage.Body = messageBody;
 
-                SmtpClient mailClient = new SmtpClient();
+                SmtpClient mailClient = new SmtpClient("localhost");
                 mailClient.UseDefaultCredentials = true;
-                mailClient.Send(emailMessage);
+                try {
+                    mailClient.Send(emailMessage);
+                }
+                catch (Exception ex)
+                {
+                    Message("Something Went Wrong.");
+                }
 
                 emailForm.Visible = false;
                 sentEmail.Visible = true;
@@ -85,11 +91,19 @@ public partial class contact : System.Web.UI.Page
                         + emailMessage.Body
                         + "</p>";
 
-
             }
         }
 
     }
+    public void Message(string strMsg)
+    {
+        string strScript = null;
+        strScript = "<script>";
+        strScript = strScript + "alert('" + strMsg + "');";
+        strScript = strScript + "</script>";
+        ClientScript.RegisterStartupScript(GetType(), "f", strScript);
+    }
+
     protected Boolean validateAddress(string address)
     {
         Regex emailPattern = new
