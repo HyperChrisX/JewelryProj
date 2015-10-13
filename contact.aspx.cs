@@ -14,7 +14,7 @@ public partial class contact : System.Web.UI.Page
         Page.Validate();
         if (Page.IsValid)
         {
-            string toAddress = "cj55448@hotmail.com";
+            string toAddress = "salchrj@dunwoody.edu";
             
             string[] toArray = toAddress.Split(',');
             
@@ -63,17 +63,18 @@ public partial class contact : System.Web.UI.Page
                 emailMessage.Subject = messageSubject;
                 emailMessage.Body = messageBody;
 
-                SmtpClient mailClient = new SmtpClient("localhost",25);
+                SmtpClient mailClient = new SmtpClient();
                 mailClient.UseDefaultCredentials = true;
                 mailClient.DeliveryMethod = SmtpDeliveryMethod.Network;
-                try {
+                try
+                {
                     mailClient.Send(emailMessage);
                 }
                 catch (Exception ex)
                 {
                     Message(ex.Message);
                 }
-
+                
                 emailForm.Visible = false;
                 sentEmail.Visible = true;
 
