@@ -12,5 +12,6 @@
     <div>
         <uc:navigation ID="navigation" runat="server" /> <!-- navigation -->
     </div>
+    <h1 style="text-align:center;">A Fun Game</h1>
 </body>
 </html>
