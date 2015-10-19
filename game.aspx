@@ -7,11 +7,57 @@
 <head id="Head1" runat="server">
     <title>Jewelry Store - Game</title>
     <link rel="Stylesheet" href="StyleSheet.css" type="text/css" />
+    <script type="text/javascript" language="javascript">
+        <!-- Begin
+        var total = 0
+        var play = false
+        function display(element) {
+        var now = new Date()
+        if (!play) {
+        play = true
+        startTime = now.getTime()
+        }
+        if (now.getTime() - startTime > 20000) {
+        element.checked = !element.checked
+        return
+        }
+         if (element.checked)
+        total++
+        else
+        total--
+        element.form.num.value = total
+        }
+        function restart(form) {
+        total = 0
+        play = false
+        for (var i = 1; i <= 100; ++i) {
+         form.elements[i].checked = false
+           }
+        }
+        // End -->
+    </script>
 </head>
 <body>
     <div>
         <uc:navigation ID="navigation" runat="server" /> <!-- navigation -->
     </div>
     <h1 style="text-align:center;">A Fun Game</h1>
+    <p style="text-align:center;">Test your skill.  How many boxes can you check in 20 seconds?</p>
+    <script language="javascript" type ="text/javascript">
+        <!-- Begin
+        document.write("<form><div style='text-align: center;'>")
+        document.write('<input type="text" value="0" name="num" ');
+        document.write('size=10 onFocus="this.blur()"><br />')
+        document.write("<hr size=1 width=40%>")
+        for (var i = 0; i < 10; ++i) {
+        for (var j = 0; j < 10; ++j) {
+        document.write('<input type="checkbox" onClick="display(this)">')}
+        document.write("<br />")}
+        document.write("<hr size=1 width=40%>")
+        document.write('<input type="button" value="restart" ');
+        document.write('onClick="restart(this.form)">')
+        document.write("</div></form>")
+        // End -->
+    </script>
 </body>
 </html>

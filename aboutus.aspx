@@ -27,14 +27,14 @@
             I had a great adventure. I was about to go into networking, but I notice that I didn't like it anymore because I was about to be force into
             a job that I didn't like. I transfered over to this program... Now I love it. I would like to mention that when I was little I already knew
             what I wanted to be. Well, this program help me get into what I want to be and that is... to be a game creator. So yeah!!!!! Also, Christian
-            (See below) is a hugh fan of Microsoft. As for me... I hate Apple!!! (Not really, just the phone).
+            (See below) is a huge fan of Microsoft. As for me... I hate Apple!!! (Not really, just the phone).
         </p>
     <br />
         <h2 style="text-align:right; margin-right:15%">Christian</h2> <!-- Name of the creator -->
         <p style="text-align:right; margin-right:15%; margin-left:15%;"> <!-- Move text to the right -->
-            My name is Christian Saltness. I am also a student at Dunwoody College of Techology and currently reside in Minnesota. I am 19 years old and have lived here
+            My name is Christian Saltness. I am also a student at Dunwoody College of Technology and currently reside in Minnesota. I am 19 years old and have lived here
             all my life. I am a huge geek and fan of technology, and have been a big Microsoft fan for a while. I want to be able to do something involving coding or 
-            other web design, networking, programming things and that is how I'e ended up here at Dunwoody. I am also slightly interested in cars, but technology is usually
+            other web design, networking, programming things and that is how I've ended up here at Dunwoody. I am also slightly interested in cars, but technology is usually
             what I keep the closest eye on, following new announcements in OS, phones, tablets, and more. I have built a few websites in the past, but none are currently
             hosted online. This site is a collaboration between myself and Nhia (see above).
         </p>
