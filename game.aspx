@@ -43,21 +43,22 @@
     </div>
     <h1 style="text-align:center;">A Fun Game</h1>
     <p style="text-align:center;">Test your skill.  How many boxes can you check in 20 seconds?</p>
-    <script language="javascript" type ="text/javascript">
-        <!-- Begin
-        document.write("<form><div style='text-align: center;'>")
-        document.write('<input type="text" value="0" name="num" ');
-        document.write('size=10 onFocus="this.blur()"><br />')
-        document.write("<hr size=1 width=40%>")
+    <%
+        // Begin game
+        Response.Write("<form><div style='text-align: center;'>");
+        Response.Write("<input type='text[ value='0' name='num' ");
+        Response.Write("size='10' onFocus='this.blur()'><br />");
+        Response.Write("<hr size='1' width='40%'>");
         for (var i = 0; i < 10; ++i) {
-        for (var j = 0; j < 10; ++j) {
-        document.write('<input type="checkbox" onClick="display(this)">')}
-        document.write("<br />")}
-        document.write("<hr size=1 width=40%>")
-        document.write('<input type="button" value="restart" ');
-        document.write('onClick="restart(this.form)">')
-        document.write("</div></form>")
-        // End -->
-    </script>
+            for (var j = 0; j < 10; ++j) {
+                Response.Write("<input type='checkbox' onClick='display(this)'>");
+            }
+            Response.Write("<br />");
+        }
+        Response.Write("<hr size='1' width='40%'>");
+        Response.Write("<input type='button' value='Restart' onClick='restart(this.form)'>");
+        Response.Write("</div></form>");
+        // End
+    %>
 </body>
 </html>
