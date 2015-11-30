@@ -5,7 +5,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Jewelry Store - Home</title>
+    <title>Jewelry Store - Products</title>
     <link rel="Stylesheet" href="StyleSheet.css" type="text/css" />
 </head>
 <body>
@@ -20,12 +20,10 @@
         <br /> By Default this search will return all matches to your terms.
       <br />
       <asp:Label ID="statusL" runat="server" />
-      
-      
-      <asp:GridView ID="ProductsGrid" runat="server" AllowSorting="true" OnSortCommand="dgSearchList_SortClick" >
-      
-      </asp:GridView>
-     
+          <div class="grid">
+              <asp:GridView ID="ProductsGrid" runat="server" AllowSorting="true" OnSortCommand="dgSearchList_SortClick">  
+              </asp:GridView>
+          </div>
       </div>
     </form>
 </div>
