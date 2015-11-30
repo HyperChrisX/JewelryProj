@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true"  CodeFile="Default.aspx.cs" Inherits="_Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true"  CodeFile="products.aspx.cs" Inherits="products" %>
 <%@ Register TagPrefix="uc" TagName="navigation" Src="~/navigation.ascx" %>
 
 <!DOCTYPE html>

@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Configuration;
 
-public partial class DataGrid_Products : System.Web.UI.Page
+public partial class products : System.Web.UI.Page
 {
 
     protected void Page_Load(object sender, EventArgs e)
@@ -23,8 +23,8 @@ public partial class DataGrid_Products : System.Web.UI.Page
         try
         {
             string connectionString
-               = ConfigurationManager.ConnectionStrings["AdventureWorks2012"].ConnectionString;
-
+               = ConfigurationManager.ConnectionStrings["JewleryStore"].ConnectionString;
+            
             statusL.Text = "Searching for " + searchTerm.Text;
             string sqlQuery = "SELECT  ProductID,Name,ProductNumber, Color " +
                                " FROM Production.Product " +
