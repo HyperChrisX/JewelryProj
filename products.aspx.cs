@@ -26,17 +26,16 @@ public partial class products : System.Web.UI.Page
                = ConfigurationManager.ConnectionStrings["JewleryStore"].ConnectionString;
             
             statusL.Text = "Searching for " + searchTerm.Text;
-            string sqlQuery = "SELECT  ProductID,Name,ProductNumber, Color " +
-                               " FROM Production.Product " +
-                               " Where 1=2";
+            string sqlQuery = "SELECT  Amount, Ring, Neck, Wrist, Ear " +
+                               " FROM Product; ";
 
 
             string[] searchTerms = searchTerm.Text.Replace(';', ' ').Replace("'", "").Split(' ');
 
-            foreach (string term in searchTerms)
-            {
-                sqlQuery += " OR Name like '%" + term + "%' ";
-            }
+            //foreach (string term in searchTerms)
+            //{
+           //     sqlQuery += " OR Name like '%" + term + "%' ";
+            //}
             SqlDataAdapter outlookRecords =
                     new SqlDataAdapter(sqlQuery, connectionString);
 
