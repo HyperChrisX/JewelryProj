@@ -26,7 +26,7 @@ public partial class products : System.Web.UI.Page
                = ConfigurationManager.ConnectionStrings["JewleryStore"].ConnectionString;
             
             statusL.Text = "Searching for " + searchTerm.Text;
-            string sqlQuery = "SELECT  Amount, Ring, Neck, Wrist, Ear " +
+            string sqlQuery = "SELECT  Ring, Neck, Wrist, Ear " +
                                " FROM Product; ";
 
 
