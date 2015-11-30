@@ -94,7 +94,7 @@ public partial class products : System.Web.UI.Page
         {
             statusL.Text += "This should not be sorted";
             string connectionString
-               = ConfigurationManager.ConnectionStrings["AdventureWorks2012"].ConnectionString;
+               = ConfigurationManager.ConnectionStrings["JewleryStore"].ConnectionString;
             string sqlQuery = "SELECT ProductID,Name,ProductNumber, Color " +
                               " FROM Production.Product; ";
             SqlDataAdapter outlookRecords =

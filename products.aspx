@@ -5,7 +5,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Jewelry Store - Products</title>
+    <title>Jewelry Store - Home</title>
     <link rel="Stylesheet" href="StyleSheet.css" type="text/css" />
 </head>
 <body>
