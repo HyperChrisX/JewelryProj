@@ -22,6 +22,6 @@
     </div>
     </form>
     <p>
-        <img alt="Ruby_Ring" class="Ruby_Ring" src="file:///C:/Users/yannhir/Desktop/r0052ruby-1.jpg" /></p>
+        <img alt="Ruby_Ring" class="Ruby_Ring" src="r0052ruby-1.jpg" /></p>
 </body>
 </html>
