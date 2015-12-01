@@ -95,8 +95,8 @@ public partial class products : System.Web.UI.Page
             statusL.Text += "This should not be sorted";
             string connectionString
                = ConfigurationManager.ConnectionStrings["JewleryStore"].ConnectionString;
-            string sqlQuery = "SELECT ProductID,Name,ProductNumber, Color " +
-                              " FROM Production.Product; ";
+            string sqlQuery = "SELECT  Ring, Neck, Wrist, Ear " +
+                               " FROM Product; ";
             SqlDataAdapter outlookRecords =
                 new SqlDataAdapter(sqlQuery, connectionString);
 

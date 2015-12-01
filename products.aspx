@@ -21,8 +21,8 @@
       <br />
       <asp:Label ID="statusL" runat="server" />
           <div class="grid">
-              <asp:GridView ID="ProductsGrid" runat="server" AutoGenerateColumns="false" OnSortCommand="dgSearchList_SortClick">  
-                  <Columns>
+              <asp:GridView ID="ProductsGrid" runat="server" OnSortCommand="dgSearchList_SortClick">  
+                  <%--<Columns>
                       <asp:BoundField DataField="ProductID" HeaderText="Product #" />
                       <asp:TemplateField>
                           <ItemTemplate>
@@ -31,7 +31,7 @@
                       </asp:TemplateField>
                       <asp:BoundField DataField="ProductNumber" HeaderText="Part Number" />
                       <asp:BoundField DataField="Type" HeaderText="Item Type" />
-                  </Columns>
+                  </Columns>--%>
               </asp:GridView>
           </div>
       </div>
