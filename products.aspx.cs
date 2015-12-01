@@ -26,16 +26,17 @@ public partial class products : System.Web.UI.Page
                = ConfigurationManager.ConnectionStrings["JewleryStore"].ConnectionString;
             
             statusL.Text = "Searching for " + searchTerm.Text;
-            string sqlQuery = "SELECT  Ring, Neck, Wrist, Ear " +
-                               " FROM Product; ";
+            string sqlQuery = "SELECT  Name, Size, Type " +
+                               " FROM Product " +
+                               " Where 1=2";
 
 
             string[] searchTerms = searchTerm.Text.Replace(';', ' ').Replace("'", "").Split(' ');
 
-            //foreach (string term in searchTerms)
-            //{
-           //     sqlQuery += " OR Name like '%" + term + "%' ";
-            //}
+            foreach (string term in searchTerms)
+            {
+                sqlQuery += " OR Name like '%" + term + "%' ";
+            }
             SqlDataAdapter outlookRecords =
                     new SqlDataAdapter(sqlQuery, connectionString);
 
@@ -95,7 +96,7 @@ public partial class products : System.Web.UI.Page
             statusL.Text += "This should not be sorted";
             string connectionString
                = ConfigurationManager.ConnectionStrings["JewleryStore"].ConnectionString;
-            string sqlQuery = "SELECT  Ring, Neck, Wrist, Ear " +
+            string sqlQuery = "SELECT  Name, Size, Type " +
                                " FROM Product; ";
             SqlDataAdapter outlookRecords =
                 new SqlDataAdapter(sqlQuery, connectionString);
