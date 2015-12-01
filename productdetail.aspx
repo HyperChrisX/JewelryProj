@@ -8,11 +8,6 @@
     <title>Jewelry Store - Product Detail</title>
     <link rel="Stylesheet" href="StyleSheet.css" type="text/css" />
     <style type="text/css">
-        .Ruby_Ring {
-            width: 300px;
-            height: 298px;
-            padding-left: 200px;
-        }
     </style>
 </head>
 <body>
@@ -21,7 +16,11 @@
         <uc:navigation ID="navigation" runat="server" /> <!-- navigation -->
     </div>
     </form>
-    <p>
-        <img alt="Ruby_Ring" class="Ruby_Ring" src="r0052ruby-1.jpg" /></p>
+    <h2 style="text-align:left; margin-left:15%">Ruby Ring</h2> 
+        <img alt="Ruby_Ring" class="Ruby_Ring" src="r0052ruby-1.jpg" />
+        <p style="text-align:left; margin-left:15%; margin-right:15%; margin-top:3%;">
+                This is just a test  This is just a testThis is just a testThis is just a testThis is just a testThis is just a testThis is just a testThis is just a test
+        </p>
+        
 </body>
 </html>

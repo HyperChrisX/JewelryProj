@@ -103,3 +103,11 @@ h1.Jewelry_2
     float:right;
     margin-right: 70px;
 }
+.Ruby_Ring
+{
+    float:left;
+    margin-left: 70px;
+    width: 300px;
+    height: 298px;
+    padding-left: 17%;
+}
