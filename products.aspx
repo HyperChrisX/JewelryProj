@@ -21,8 +21,7 @@
       <br />
       <asp:Label ID="statusL" runat="server" />
           <div class="grid">
-              <asp:GridView ID="ProductsGrid" runat="server" AutoGenerateColumns="false" OnSortCommand="dgSearchList_SortClick">
-                  <PagerStyle HorizontalAlign="Center"></PagerStyle>  
+              <asp:GridView ID="ProductsGrid" runat="server" AutoGenerateColumns="false" HorizontalAlign="Center" OnSortCommand="dgSearchList_SortClick">
                   <Columns>
                       <asp:TemplateField HeaderText ="Gemstone">
                           <ItemTemplate>
