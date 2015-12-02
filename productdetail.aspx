@@ -13,14 +13,19 @@
 <body>
     <form id="form1" runat="server">
     <div>
+        <asp:Label ID="errLabel" Enabled="true" runat="server"/>
         <uc:navigation ID="navigation" runat="server" /> <!-- navigation -->
+        <h1>
+            <asp:Label ID="productName" runat="server"></asp:Label>
+        </h1>
+        <img alt="Ruby_Ring" class="Ruby_Ring" src="r0052ruby-1.jpg" />
+        <asp:Label ID="descLabel" runat="server" Text="No Item" />
+        <br />
+        <br />
+        <h2>
+            <asp:Label ID="price" runat="server" Text="$?.??" />
+        </h2>
     </div>
     </form>
-    <h2 style="text-align:left; margin-left:15%">Ruby Ring</h2> 
-        <img alt="Ruby_Ring" class="Ruby_Ring" src="r0052ruby-1.jpg" />
-        <p style="text-align:left; margin-left:15%; margin-right:15%; margin-top:3%;">
-                This is just a test  This is just a testThis is just a testThis is just a testThis is just a testThis is just a testThis is just a testThis is just a test
-        </p>
-        
 </body>
 </html>
