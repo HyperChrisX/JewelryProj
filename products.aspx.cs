@@ -35,7 +35,7 @@ public partial class products : System.Web.UI.Page
 
             foreach (string term in searchTerms)
             {
-                sqlQuery += "OR Name like '%" + term + "%' ";
+                sqlQuery += "OR Types like '%" + term + "%' ";
             }
             SqlDataAdapter outlookRecords =
                     new SqlDataAdapter(sqlQuery, connectionString);
