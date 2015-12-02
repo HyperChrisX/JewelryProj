@@ -20,19 +20,17 @@
         <br /> By Default this search will return all matches to your terms.
       <br />
       <asp:Label ID="statusL" runat="server" />
-          <div class="grid">
-              <asp:GridView ID="ProductsGrid" runat="server" AutoGenerateColumns="false" HorizontalAlign="Center" OnSortCommand="dgSearchList_SortClick">
-                  <Columns>
-                      <asp:TemplateField HeaderText ="Gemstone">
-                          <ItemTemplate>
-                              <asp:HyperLink ID="Types" NavigateUrl='<%#"./productdetail.aspx?Types="+Eval("Types") %>' Text='<%# Eval("Types") %>' runat="server"/>
-                          </ItemTemplate>
-                      </asp:TemplateField>
-                      <asp:BoundField DataField="Price" HeaderText="Price" />
-                  </Columns>
-              </asp:GridView>
-          </div>
-      </div>
+        <asp:GridView ID="ProductsGrid" runat="server" AutoGenerateColumns="false" HorizontalAlign="Center" OnSortCommand="dgSearchList_SortClick">
+            <Columns>
+                <asp:TemplateField HeaderText ="Gemstone">
+                    <ItemTemplate>
+                        <asp:HyperLink ID="Types" NavigateUrl='<%#"./productdetail.aspx?Types="+Eval("Types") %>' Text='<%# Eval("Types") %>' runat="server"/>
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:BoundField DataField="Price" HeaderText="Price" />
+            </Columns>
+        </asp:GridView>
+    </div>
     </form>
 </div>
 </body>

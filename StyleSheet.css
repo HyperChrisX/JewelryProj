@@ -59,10 +59,6 @@ div
 {
     text-align:center;
 }
-div.grid
-{
-    grid-column-align: center;
-}
 li.title
 {
     font-weight: bold;
