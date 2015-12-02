@@ -21,17 +21,15 @@
       <br />
       <asp:Label ID="statusL" runat="server" />
           <div class="grid">
-              <asp:GridView ID="ProductsGrid" runat="server" OnSortCommand="dgSearchList_SortClick">  
-                  <%--<Columns>
-                      <asp:BoundField DataField="ProductID" HeaderText="Product #" />
-                      <asp:TemplateField>
+              <asp:GridView ID="ProductsGrid" runat="server" AutoGenerateColumns="false" OnSortCommand="dgSearchList_SortClick">  
+                  <Columns>
+                      <asp:TemplateField HeaderText ="Gemstone">
                           <ItemTemplate>
-                              <asp:HyperLink ID="Details" NavigateUrl='<%#"./productdetail.aspx?ProductID="+Eval("ProductID") %>' Text='<%# Eval("Name") %>' runat="server"/>
+                              <asp:HyperLink ID="Types" NavigateUrl='<%#"./productdetail.aspx?Types="+Eval("Types") %>' Text='<%# Eval("Types") %>' runat="server"/>
                           </ItemTemplate>
                       </asp:TemplateField>
-                      <asp:BoundField DataField="ProductNumber" HeaderText="Part Number" />
-                      <asp:BoundField DataField="Type" HeaderText="Item Type" />
-                  </Columns>--%>
+                      <asp:BoundField DataField="Price" HeaderText="Price" />
+                  </Columns>
               </asp:GridView>
           </div>
       </div>
