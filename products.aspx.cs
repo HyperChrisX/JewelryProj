@@ -28,7 +28,7 @@ public partial class products : System.Web.UI.Page
             statusL.Text = "Searching for " + searchTerm.Text;
             string sqlQuery = "SELECT Type, Price " +
                                " FROM Product "+
-                               " Where 1=2;";
+                               " Where 1=2 ";
 
 
             string[] searchTerms = searchTerm.Text.Replace(';', ' ').Replace("'", "").Split(' ');
