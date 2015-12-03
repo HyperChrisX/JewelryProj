@@ -16,6 +16,7 @@ public partial class products : System.Web.UI.Page
         if (!Page.IsPostBack)
         {
             PopulateDatagrid();
+            statusL.Visible = false;
         }
     }
     protected void searchBtn_OnClick(object sender, EventArgs e)
@@ -24,7 +25,7 @@ public partial class products : System.Web.UI.Page
         {
             string connectionString
                = ConfigurationManager.ConnectionStrings["JewleryStore"].ConnectionString;
-            
+            statusL.Visible = true;
             statusL.Text = "Searching for " + searchTerm.Text;
             string sqlQuery = "SELECT Types, Price " +
                                " FROM Product "+
@@ -54,46 +55,43 @@ public partial class products : System.Web.UI.Page
 
 
     }
-    //public void dgSearchList_SortClick(object sender, DataGridSortCommandEventArgs e)
-    //{
-    //    // ie the Sortexpression assigned to the Column.Check STEP III for how to assign a   // sortexpression on a column.
-    //    PopulateDatagrid(e.SortExpression); //Call the method that populates the Datagrid with
-    //    //the values from the Dataview.
-    //}
-    //public void PopulateDatagrid(string sortField)
-    //{
-    //    try
-    //    {
+    public void dgSearchList_SortClick(object sender, DataGridSortCommandEventArgs e)
+    {
+        // ie the Sortexpression assigned to the Column.Check STEP III for how to assign a   // sortexpression on a column.
+        PopulateDatagrid(e.SortExpression); //Call the method that populates the Datagrid with
+        //the values from the Dataview.
+    }
+    public void PopulateDatagrid(string sortField)
+    {
+        try
+        {
+            string connectionString
+                = ConfigurationManager.ConnectionStrings["JewleryStore"].ConnectionString;
+            string sqlQuery = "SELECT Types, Price " +
+                               " FROM Product;";
+            SqlDataAdapter outlookRecords =
+                new SqlDataAdapter(sqlQuery, connectionString);
 
-    //        statusL.Text = "This should be sorted";
-    //        string connectionString
-    //            = ConfigurationManager.ConnectionStrings["AdventureWorks2012"].ConnectionString;
-    //        string sqlQuery = "SELECT ProductID,Name,ProductNumber, Color " +
-    //                          " FROM Production.Product; ";
-    //        SqlDataAdapter outlookRecords =
-    //            new SqlDataAdapter(sqlQuery, connectionString);
+            // Create and fill a DataSet.
+            DataSet ds = new DataSet();
+            outlookRecords.Fill(ds);
+            DataView dv = new DataView(ds.Tables[0]);
+            dv.Sort = sortField;
+            ProductsGrid.DataSource = dv;
+            ProductsGrid.DataBind();
 
-    //        // Create and fill a DataSet.
-    //        DataSet ds = new DataSet();
-    //        outlookRecords.Fill(ds);
-    //        DataView dv = new DataView(ds.Tables[0]);
-    //        dv.Sort = sortField;
-    //        ProductsGrid.DataSource = dv; 
-    //        ProductsGrid.DataBind();
+        }
+        catch (Exception exc)
+        {
 
-    //    }
-    //    catch (Exception exc)
-    //    {
+            statusL.Text = exc.Message;
+        }
 
-    //        statusL.Text = exc.Message;
-    //    }
-
-    //}
+    }
     public void PopulateDatagrid()
     {
         try
         {
-            statusL.Text += "This should not be sorted";
             string connectionString
                = ConfigurationManager.ConnectionStrings["JewleryStore"].ConnectionString;
             string sqlQuery = "SELECT Types, Price " +
