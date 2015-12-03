@@ -18,7 +18,7 @@
         <h1>
             <asp:Label ID="productName" runat="server"></asp:Label>
         </h1>
-        <asp:Image AlternateText="Ring_Image" ID="ringImage" runat="server" CssClass="RingImages" />
+        <asp:Image AlternateText="Ring_Image" ID="ringImage" runat="server" ImageAlign="Left" />
         <asp:Label ID="descLabel" runat="server" Text="No Item" />
         <br />
         <br />
