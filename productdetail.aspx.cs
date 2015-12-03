@@ -23,7 +23,7 @@ public partial class productdetail : System.Web.UI.Page
             string connectionString
                = ConfigurationManager.ConnectionStrings["JewleryStore"].ConnectionString;
             productName.Text = gemtype + " Ring";
-            string sqlQuery = "SELECT Types, Price, Descriptions " +
+            string sqlQuery = "SELECT Types, Price, Descriptions, Images " +
                                " FROM Product " +
                                " Where 1=2 ";
 
@@ -42,7 +42,7 @@ public partial class productdetail : System.Web.UI.Page
                 descLabel.Text = prodInfo["Descriptions"].ToString();
                 double itemPrice = Convert.ToDouble(prodInfo["Price"].ToString());
                 price.Text = itemPrice.ToString("c");
-                ringImage.ImageUrl =prodInfo["Images"].ToString();
+                ringImage.ImageUrl = prodInfo["Images"].ToString();
                 prodInfo.Close();
             }
             else
