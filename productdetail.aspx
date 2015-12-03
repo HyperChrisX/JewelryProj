@@ -18,7 +18,7 @@
         <h1>
             <asp:Label ID="productName" runat="server"></asp:Label>
         </h1>
-        <img alt="Ruby_Ring" class="Ruby_Ring" src="r0052ruby-1.jpg" />
+        <asp:Image AlternateText="Ring_Image" ID="ringImage" runat="server" ImageAlign="Left" />
         <asp:Label ID="descLabel" runat="server" Text="No Item" />
         <br />
         <br />

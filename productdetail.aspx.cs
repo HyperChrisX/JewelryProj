@@ -13,6 +13,7 @@ public partial class productdetail : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         errLabel.Visible = false;
+        ringImage.Visible = false;
         string gemtype = Request.QueryString.ToString();
         gemtype = gemtype.Replace("Types=", "");
         try
@@ -37,9 +38,11 @@ public partial class productdetail : System.Web.UI.Page
             SqlDataReader prodInfo = sqlCommand.ExecuteReader();
             if (prodInfo.Read())
             {
+                ringImage.Visible = true;
                 descLabel.Text = prodInfo["Descriptions"].ToString();
                 double itemPrice = Convert.ToDouble(prodInfo["Price"].ToString());
                 price.Text = itemPrice.ToString("c");
+                ringImage.ImageUrl =prodInfo["Images"].ToString();
                 prodInfo.Close();
             }
             else
