@@ -7,8 +7,6 @@
 <head runat="server">
     <title>Jewelry Store - Product Detail</title>
     <link rel="Stylesheet" href="StyleSheet.css" type="text/css" />
-    <style type="text/css">
-    </style>
 </head>
 <body>
     <form id="form1" runat="server">
