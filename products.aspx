@@ -20,7 +20,7 @@
         <br /> By Default this search will return all matches to your terms.
       <br />
       <asp:Label ID="statusL" runat="server" />
-        <asp:GridView ID="ProductsGrid" runat="server" AutoGenerateColumns="false" HorizontalAlign="Center" OnSortCommand="dgSearchList_SortClick">
+        <asp:GridView ID="ProductsGrid" runat="server" AutoGenerateColumns="false" HorizontalAlign="Center" Width="75%" OnSortCommand="dgSearchList_SortClick">
             <Columns>
                 <asp:TemplateField HeaderText ="Gemstone">
                     <ItemTemplate>
