@@ -74,13 +74,13 @@ public partial class productdetail : System.Web.UI.Page
             curCart = (ShoppingCart)Session["savedCart"];
         }
 
-        bool addResult = curCart.addItem(gemtype, "GEMS");
+        bool addResult = curCart.addItem(gemtype);
 
         if (addResult == false)
         {
             errLabel.Text = "Already Selected";
         }
-        else
+        else if(addResult == true)
         {
             Session["savedCart"] = curCart;
             Response.Redirect("shoppingCart.aspx");

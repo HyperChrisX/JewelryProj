@@ -17,17 +17,14 @@ public class ShoppingCart
 
     private ArrayList productID = new ArrayList();
     private ArrayList productQuantity = new ArrayList();
-    private ArrayList productTable = new ArrayList();
 
-
-    public bool addItem(string ProdID, string table) 
+    public bool addItem(string ProdID) 
     {
         foreach (string item in productID) {
             if (item == ProdID) { return false; }
         }
         productID.Add(ProdID);
         productQuantity.Add(1);
-        productTable.Add(table);
 
         return true;
     }
@@ -39,7 +36,7 @@ public class ShoppingCart
         retValue += "<tr><th>Product</th><th>Quantity</th><th>Price Each</th></tr>";
         for (int i = 0; i < productID.Count; i++)
         {
-            string sqlString = "Select Types, Price From Product Where Types = '" + productID[i] + "';";
+            string sqlString = "Select Types, Price From Product  Where Types = '" + productID[i] + "';";
             using (SqlCommand prodCommand = new SqlCommand(sqlString, dbConnection))
             {
                 using (SqlDataReader prodRecords = prodCommand.ExecuteReader())
