@@ -57,10 +57,9 @@ public partial class productdetail : System.Web.UI.Page
             errLabel.Visible = true;
             errLabel.Text = exc.Message;
         }
-
     }
 
-    protected void ProductGrid_SelectedIndexChanged(object sender, EventArgs e)
+    protected void Button_Click(object sender, EventArgs e)
     {
         ShoppingCart curCart;
         string gemtype = Request.QueryString.ToString();

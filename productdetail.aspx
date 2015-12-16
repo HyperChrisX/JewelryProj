@@ -23,7 +23,7 @@
         <h2>
             <asp:Label ID="price" runat="server" Text="$?.??" />
         </h2>
-        <asp:Button ID = "button"  Text = "Add to Cart" runat = "server" />
+        <asp:Button ID = "Button" Text = "Add to Cart" runat = "server" OnClick="Button_Click" />
     </div>
     </form>
 </body>
