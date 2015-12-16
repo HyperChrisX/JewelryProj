@@ -39,7 +39,7 @@ public class ShoppingCart
         retValue += "<tr><th>Product</th><th>Quantity</th><th>Price Each</th></tr>";
         for (int i = 0; i < productID.Count; i++)
         {
-            string sqlString = "Select ProductID, Name, Price From Cakes  Where ProductID = '" + productID[i] + "';";
+            string sqlString = "Select Types, Price From Product  Where Types = '" + productID[i] + "';";
             using (SqlCommand prodCommand = new SqlCommand(sqlString, dbConnection))
             {
                 using (SqlDataReader prodRecords = prodCommand.ExecuteReader())
