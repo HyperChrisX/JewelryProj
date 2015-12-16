@@ -13,11 +13,10 @@
         <uc:navigation ID="navigation" runat="server" /> <!-- navigation -->
         <h1>Your Cart</h1>
         <br />
-        <asp:Literal ID="CartBody" runat="server" />
     </div>
     <form id="form1" runat="server">
     <div>
-    
+        <asp:Literal ID="CartBody" runat="server" />
     </div>
     </form>
 </body>

@@ -80,7 +80,7 @@ public partial class productdetail : System.Web.UI.Page
         {
             errLabel.Text = "Already Selected";
         }
-        else if(addResult == true)
+        else
         {
             Session["savedCart"] = curCart;
             Response.Redirect("shoppingCart.aspx");
