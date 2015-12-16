@@ -83,7 +83,7 @@ public partial class productdetail : System.Web.UI.Page
         else
         {
             Session["savedCart"] = curCart;
-            Response.Redirect("shoppingCart.aspx");
+            Response.Redirect("shoppingCart.aspx", false);
         }
     }
 }
