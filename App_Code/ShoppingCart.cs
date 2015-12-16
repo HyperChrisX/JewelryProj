@@ -39,7 +39,7 @@ public class ShoppingCart
         retValue += "<tr><th>Product</th><th>Quantity</th><th>Price Each</th></tr>";
         for (int i = 0; i < productID.Count; i++)
         {
-            string sqlString = "Select Types, Price From Product  Where Types = '" + productID[i] + "';";
+            string sqlString = "Select Types, Price From Product Where Types = '" + productID[i] + "';";
             using (SqlCommand prodCommand = new SqlCommand(sqlString, dbConnection))
             {
                 using (SqlDataReader prodRecords = prodCommand.ExecuteReader())
@@ -47,7 +47,7 @@ public class ShoppingCart
                     if (prodRecords.Read())
                     {
                         retValue += "<tr>"
-                            + "<td>" + prodRecords["Name"] + "</td> "
+                            + "<td>" + prodRecords["Types"] + "</td> "
                             + "<td>" + productQuantity[i] + "</td> "
                             + "<td>" + prodRecords["Price"] + "</td> ";
                         retValue += "</tr>";
@@ -63,9 +63,6 @@ public class ShoppingCart
         retValue += "</asp:Table>";
         return retValue;
     }
-
-
-
     
     public ShoppingCart()
     {
