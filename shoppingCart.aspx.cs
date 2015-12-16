@@ -9,6 +9,26 @@ public partial class shoppingCart : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        ShoppingCart curCart;
+        try
+        {
+            if (Session["savedCart"] != null)
+            {
+                curCart = (ShoppingCart)Session["savedCart"];
+                curCart.showCart();
+            }
+            else
+            {
+                CartBody.Text = "<p>Your Shopping Cart is EMPTY!</p>";
+                curCart = new ShoppingCart();
+                CartBody.Text += curCart.showCart();
+            }
 
+        }
+        catch (Exception)
+        {
+
+            CartBody.Text = "<p>Could not instantiate a Shopping Cart.</p>";
+        }
     }
 }
