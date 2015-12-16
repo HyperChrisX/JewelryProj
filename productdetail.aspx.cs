@@ -59,4 +59,32 @@ public partial class productdetail : System.Web.UI.Page
         }
 
     }
+
+    protected void ProductGrid_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        ShoppingCart curCart;
+        string gemtype = Request.QueryString.ToString();
+        gemtype = gemtype.Replace("Types=", "");
+
+        if (Session["saved"] == null)
+        {
+            curCart = new ShoppingCart();
+        }
+        else
+        {
+            curCart = (ShoppingCart)Session["savedCart"];
+        }
+
+        bool addResult = curCart.addItem(gemtype, "GEMS");
+
+        if (addResult == false)
+        {
+            errLabel.Text = "Already Selected";
+        }
+        else
+        {
+            Session["savedCart"] = curCart;
+            Response.Redirect("shopping_cart.aspx");
+        }
+    }
 }
