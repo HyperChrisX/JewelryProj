@@ -14,14 +14,14 @@ public partial class shoppingCart : System.Web.UI.Page
         {
             if (Session["savedCart"] != null)
             {
-                curCart = (ShoppingCart)Session["savedCart"];
+                //curCart = (ShoppingCart)Session["savedCart"];
                 //curCart.showCart();
                 //CartBody.Text += curCart.showCart();
-                if (Request.QueryString["operation"].Equals("removeItem"))
-                {
-                    curCart.remItem(Request.QueryString["productID"]);
-                    Response.Redirect("shopping.aspx", false);
-                }
+                //if (Request.QueryString["operation"].Equals("removeItem"))
+                //{
+                //    curCart.remItem(Request.QueryString["productID"]);
+                //    Response.Redirect("shopping.aspx", false);
+                //}
                 //else if (Request.QueryString["operation"].Equals("emptyCart"))
                 //{
                 //    curCart.emptyCart(Request.QueryString["productID"]);
