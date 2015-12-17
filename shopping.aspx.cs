@@ -27,6 +27,16 @@ public partial class shoppingCart : System.Web.UI.Page
                     curCart.emptyCart(Request.QueryString["productID"]);
                     Response.Redirect("shopping.aspx?operation=");
                 }
+                else if (Request.QueryString["operation"].Equals("addOne"))
+                {
+                    curCart.addOne(Request.QueryString["productID"]);
+                    Response.Redirect("shopping.aspx?operation=");
+                }
+                else if (Request.QueryString["operation"].Equals("removeOne"))
+                {
+                    curCart.remOne(Request.QueryString["productID"]);
+                    Response.Redirect("shopping.aspx?operation=");
+                }
                 else
                 {
                     curCart.showCart();

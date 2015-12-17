@@ -47,6 +47,35 @@ public class ShoppingCart
         productQuantity.Clear();
     }
 
+    public void addOne(string prodID)
+    {
+        for(int i = 0; i < productID.Count; i++)
+        {
+            if(productID[i].ToString().Equals(prodID))
+            {
+                productQuantity[i] = Convert.ToInt16(productQuantity[i]) + 1;
+                break;
+            }
+        }
+    }
+
+    public void remOne(string prodID)
+    {
+        for(int i = 0; i < productID.Count; i++)
+        {
+            if(productID[i].ToString().Equals(prodID))
+            {
+                productQuantity[i] = Convert.ToInt16(productQuantity[i]) - 1;
+                if(Convert.ToInt16(productQuantity[i]) == 0)
+                {
+                    productID.RemoveAt(i);
+                    productQuantity.RemoveAt(i);
+                }
+                break;
+            }
+        }
+    }
+
     public string showCart() 
     {
         double total = 0;
@@ -63,7 +92,8 @@ public class ShoppingCart
                     {
                         retValue += "<tr>"
                             + "<td>" + prodRecords["Types"] + "</td> "
-                            + "<td>" + productQuantity[i] + "</td> "
+                            + "<td>" + "<a href='shopping.aspx?operation=removeOne&productID=" + productID[i] + "'>-</a>&nbsp;" + productQuantity[i] 
+                            + "&nbsp;<a href='shopping.aspx?operation=addOne&productID=" + productID[i] + "'>+</a>" + "</td> "
                             + "<td>" + prodRecords["Price"] + "</td> "
                             + "<td><a href='shopping.aspx?operation=removeItem&productID=" + productID[i] + "'>Remove</a>" +"</td>";
                         retValue += "</tr>";
