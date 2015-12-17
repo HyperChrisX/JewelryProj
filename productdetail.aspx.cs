@@ -78,7 +78,7 @@ public partial class productdetail : System.Web.UI.Page
 
         if (addResult == false)
         {
-            errLabel.Text = "Already Selected";
+            Button.Text = "Already in Cart";
         }
         else
         {
