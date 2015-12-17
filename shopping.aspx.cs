@@ -27,7 +27,7 @@ public partial class shoppingCart : System.Web.UI.Page
                     curCart.emptyCart(Request.QueryString["productID"]);
                     Response.Redirect("shopping.aspx");
                 }
-                else if (Request.QueryString["operation"].Equals(null))
+                else
                 {
                     curCart.showCart();
                     CartBody.Text += curCart.showCart();
