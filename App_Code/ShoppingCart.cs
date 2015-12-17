@@ -58,7 +58,7 @@ public class ShoppingCart
                         retValue += "<tr>"
                             + "<td>" + prodRecords["Types"] + "</td> "
                             + "<td>" + productQuantity[i] + "</td> "
-                            + "<td>" + prodRecords["Price"] + "</td> ";
+                            + "<td>" + prodRecords["Price"] + "</td> "
                             + "<td><a href='shopping.aspx?operation=removeItem&productID="+ productID[i] + ">Remove</a>" +"</td>";
                         retValue += "</tr>";
 
