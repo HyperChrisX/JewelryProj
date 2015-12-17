@@ -65,7 +65,7 @@ public partial class productdetail : System.Web.UI.Page
         string gemtype = Request.QueryString.ToString();
         gemtype = gemtype.Replace("Types=", "");
 
-        if (Session["saved"] == null)
+        if (Session["savedCart"] == null)
         {
             curCart = new ShoppingCart();
         }
@@ -83,7 +83,7 @@ public partial class productdetail : System.Web.UI.Page
         else
         {
             Session["savedCart"] = curCart;
-            Response.Redirect("shoppingCart.aspx", false);
+            Response.Redirect("shopping.aspx", false);
         }
     }
 }

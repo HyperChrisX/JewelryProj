@@ -32,8 +32,8 @@ public class ShoppingCart
     public string showCart() 
     {
         double total = 0;
-        string retValue = "<asp:Table ID='ProductGrid' runat='server' width='100%'>";
-        retValue += "<tr><th>Product</th><th>Quantity</th><th>Price Each</th></tr>";
+        string retValue = "<Table ID='ProductGrid' runat='server' width='100%'>";
+        retValue += "<tr><th>Product </th><th>Quantity </th><th>Price Each </th></tr>";
         for (int i = 0; i < productID.Count; i++)
         {
             string sqlString = "Select Types, Price From Product  Where Types = '" + productID[i] + "';";
@@ -57,7 +57,7 @@ public class ShoppingCart
         retValue += "<tr><td colspan = '2'><strong>Your Shopping Cart Contains " + productQuantity.Count + " product(s).</strong></td>"
             + "<td>Total: " + total.ToString("c") + "</td>"
             + "</tr>";
-        retValue += "</asp:Table>";
+        retValue += "</Table>";
         return retValue;
     }
     

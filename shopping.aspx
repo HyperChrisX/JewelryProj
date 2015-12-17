@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="shoppingCart.aspx.cs" Inherits="shoppingCart" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="shopping.aspx.cs" Inherits="shoppingCart" %>
 <%@ Register TagPrefix="uc" TagName="navigation" Src="~/navigation.ascx" %>
 
 

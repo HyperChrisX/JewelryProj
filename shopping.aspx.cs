@@ -16,6 +16,7 @@ public partial class shoppingCart : System.Web.UI.Page
             {
                 curCart = (ShoppingCart)Session["savedCart"];
                 curCart.showCart();
+                CartBody.Text += curCart.showCart();
             }
             else
             {
