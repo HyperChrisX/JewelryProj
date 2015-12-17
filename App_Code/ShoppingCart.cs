@@ -64,8 +64,8 @@ public class ShoppingCart
                         retValue += "<tr>"
                             + "<td>" + prodRecords["Types"] + "</td> "
                             + "<td>" + productQuantity[i] + "</td> "
-                            + "<td>" + prodRecords["Price"] + "</td> "
-                            + "<td><a href='shopping.aspx?operation=removeItem&productID=" + productID[i] + "'>Remove</a>" +"</td>";
+                            + "<td>" + prodRecords["Price"] + "</td> ";
+                            //+ "<td><a href='shopping.aspx?operation=removeItem&productID=" + productID[i] + "'>Remove</a>" +"</td>";
                         retValue += "</tr>";
 
                         total += Convert.ToDouble(prodRecords["Price"]) * Convert.ToInt16(productQuantity[i]);
@@ -75,7 +75,7 @@ public class ShoppingCart
         }
         retValue += "<tr><td colspan = '2'><strong>Your Shopping Cart Contains " + productQuantity.Count + " product(s).</strong></td>"
             + "<td>Total: " + total.ToString("c") + "</td>"
-            + "<td><a href='shopping.aspx?operation=emptyCart'>Empty Cart</a></td>"
+            //+ "<td><a href='shopping.aspx?operation=emptyCart'>Empty Cart</a></td>"
             + "</tr>";
         retValue += "</Table>";
         return retValue;
