@@ -80,7 +80,7 @@ public class ShoppingCart
     {
         double total = 0;
         string retValue = "<Table ID='ProductGrid' runat='server' width='100%'>";
-        retValue += "<tr><th>Product </th><th>Quantity </th><th>Price Each </th><th>Remove </th></tr>";
+        retValue += "<tr><th>Product </th><th>Quantity </th><th>Price Each </th><th>Total per item </th><th>Remove </th></tr>";
         for (int i = 0; i < productID.Count; i++)
         {
             string sqlString = "Select Types, Price From Product  Where Types = '" + productID[i] + "';";
@@ -90,11 +90,13 @@ public class ShoppingCart
                 {
                     if (prodRecords.Read())
                     {
+                        double itemTotal = Convert.ToDouble(prodRecords["Price"]) * Convert.ToInt16(productQuantity[i]);
                         retValue += "<tr>"
                             + "<td>" + prodRecords["Types"] + "</td> "
                             + "<td>" + "<a href='shopping.aspx?operation=removeOne&productID=" + productID[i] + "'>-</a>&nbsp;" + productQuantity[i] 
                             + "&nbsp;<a href='shopping.aspx?operation=addOne&productID=" + productID[i] + "'>+</a>" + "</td> "
                             + "<td>" + prodRecords["Price"] + "</td> "
+                            + "<td>" + itemTotal.ToString("c") + "</td>"
                             + "<td><a href='shopping.aspx?operation=removeItem&productID=" + productID[i] + "'>Remove</a>" +"</td>";
                         retValue += "</tr>";
 
