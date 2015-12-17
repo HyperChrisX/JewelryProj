@@ -90,12 +90,13 @@ public class ShoppingCart
                 {
                     if (prodRecords.Read())
                     {
+                        string price = Convert.ToDouble(prodRecords["Price"]).ToString("c");
                         double itemTotal = Convert.ToDouble(prodRecords["Price"]) * Convert.ToInt16(productQuantity[i]);
                         retValue += "<tr>"
                             + "<td>" + prodRecords["Types"] + "</td> "
                             + "<td>" + "<a href='shopping.aspx?operation=removeOne&productID=" + productID[i] + "'>-</a>&nbsp;" + productQuantity[i] 
                             + "&nbsp;<a href='shopping.aspx?operation=addOne&productID=" + productID[i] + "'>+</a>" + "</td> "
-                            + "<td>" + prodRecords["Price"].ToString("c") + "</td> "
+                            + "<td>" + price + "</td> "
                             + "<td>" + itemTotal.ToString("c") + "</td>"
                             + "<td><a href='shopping.aspx?operation=removeItem&productID=" + productID[i] + "'>Remove</a>" +"</td>";
                         retValue += "</tr>";
