@@ -15,7 +15,7 @@ public class ShoppingCart
     private SqlConnection dbConnection =
         new SqlConnection(ConfigurationManager.ConnectionStrings["JewleryStore"].ConnectionString);
 
-    public ArrayList productID = new ArrayList();
+    private ArrayList productID = new ArrayList();
     private ArrayList productQuantity = new ArrayList();
 
     public bool addItem(string ProdID) 
