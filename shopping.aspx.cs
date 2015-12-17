@@ -15,23 +15,23 @@ public partial class shoppingCart : System.Web.UI.Page
             if (Session["savedCart"] != null)
             {
                 curCart = (ShoppingCart)Session["savedCart"];
-                curCart.showCart();
-                CartBody.Text += curCart.showCart();
-                //if (Request.QueryString["operation"].Equals("removeItem"))
-                //{
-                //    curCart.remItem(Request.QueryString["productID"]);
-                //    Response.Redirect("shopping.aspx", false);
-                //}
-                //else if (Request.QueryString["operation"].Equals("emptyCart"))
-                //{
-                //    curCart.emptyCart(Request.QueryString["productID"]);
-                //    Response.Redirect("shopping.aspx");
-                //}
-                //else
-                //{
-                //    curCart.showCart();
-                //    CartBody.Text += curCart.showCart();
-                //}
+                //curCart.showCart();
+                //CartBody.Text += curCart.showCart();
+                if (Request.QueryString["operation"].Equals("removeItem"))
+                {
+                    curCart.remItem(Request.QueryString["productID"]);
+                    Response.Redirect("shopping.aspx", false);
+                }
+                else if (Request.QueryString["operation"].Equals("emptyCart"))
+                {
+                    curCart.emptyCart(Request.QueryString["productID"]);
+                    Response.Redirect("shopping.aspx");
+                }
+                else if (Request.QueryString["operation"].Equals(null))
+                {
+                    curCart.showCart();
+                    CartBody.Text += curCart.showCart();
+                }
             }
             else
             {
