@@ -15,8 +15,6 @@ public partial class shoppingCart : System.Web.UI.Page
             if (Session["savedCart"] != null)
             {
                 curCart = (ShoppingCart)Session["savedCart"];
-                curCart.showCart();
-                CartBody.Text += curCart.showCart();
                 if (Request.QueryString["operation"].Equals("removeItem"))
                 {
                     curCart.remItem(Request.QueryString["productID"]);
@@ -25,7 +23,7 @@ public partial class shoppingCart : System.Web.UI.Page
                 else
                 {
                     curCart.showCart();
-                    CartBody.Text = curCart.showCart();
+                    CartBody.Text += curCart.showCart();
                 }
             }
             else
