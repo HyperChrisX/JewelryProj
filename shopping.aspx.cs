@@ -20,12 +20,12 @@ public partial class shoppingCart : System.Web.UI.Page
                 if (Request.QueryString["operation"].Equals("removeItem"))
                 {
                     curCart.remItem(Request.QueryString["productID"]);
-                    Response.Redirect("shopping.aspx", false);
+                    Response.Redirect("shopping.aspx?operation=", false);
                 }
                 else if (Request.QueryString["operation"].Equals("emptyCart"))
                 {
                     curCart.emptyCart(Request.QueryString["productID"]);
-                    Response.Redirect("shopping.aspx");
+                    Response.Redirect("shopping.aspx?operation=");
                 }
                 else
                 {
