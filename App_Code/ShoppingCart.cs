@@ -15,7 +15,7 @@ public class ShoppingCart
     private SqlConnection dbConnection =
         new SqlConnection(ConfigurationManager.ConnectionStrings["JewleryStore"].ConnectionString);
 
-    private ArrayList productID = new ArrayList();
+    public ArrayList productID = new ArrayList();
     private ArrayList productQuantity = new ArrayList();
 
     public bool addItem(string ProdID) 
@@ -29,11 +29,24 @@ public class ShoppingCart
         return true;
     }
 
+    public void remItem(string ProdID)
+    {
+        for(int i = 0; i< productID.Count; i++)
+        {
+            if(productID[i].ToString().Equals(ProdID))
+            {
+                productID.RemoveAt(i);
+                productQuantity.RemoveAt(i);
+                break;
+            }
+        }
+    }
+
     public string showCart() 
     {
         double total = 0;
         string retValue = "<Table ID='ProductGrid' runat='server' width='100%'>";
-        retValue += "<tr><th>Product </th><th>Quantity </th><th>Price Each </th></tr>";
+        retValue += "<tr><th>Product </th><th>Quantity </th><th>Price Each </th><th>Remove </th></tr>";
         for (int i = 0; i < productID.Count; i++)
         {
             string sqlString = "Select Types, Price From Product  Where Types = '" + productID[i] + "';";
@@ -46,7 +59,8 @@ public class ShoppingCart
                         retValue += "<tr>"
                             + "<td>" + prodRecords["Types"] + "</td> "
                             + "<td>" + productQuantity[i] + "</td> "
-                            + "<td>" + prodRecords["Price"] + "</td> ";
+                            + "<td>" + prodRecords["Price"] + "</td> "
+                            + "<td><a href='shopping.aspx?operation=removeItem&productID="+ productID[i] + ">Remove</a>" +"</td>";
                         retValue += "</tr>";
 
                         total += Convert.ToDouble(prodRecords["Price"]) * Convert.ToInt16(productQuantity[i]);
