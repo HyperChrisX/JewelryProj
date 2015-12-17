@@ -8,5 +8,6 @@
     <li class="nav"><a href="contact.aspx">Contact</a></li>
     <li class="nav"><a href="aboutus.aspx">About Us</a></li>
     <li class="nav"><a href="game.aspx">Game</a></li>
+    <li class="nav"><a href="shopping.aspx?operation=">Game</a></li>
 </ul>
 </div>
