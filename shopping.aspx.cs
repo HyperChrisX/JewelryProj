@@ -17,11 +17,11 @@ public partial class shoppingCart : System.Web.UI.Page
                 curCart = (ShoppingCart)Session["savedCart"];
                 curCart.showCart();
                 CartBody.Text += curCart.showCart();
-                if (Request.QueryString["operation"].Equals("removeItem"))
-                {
-                    curCart.remItem(Request.QueryString["productID"]);
-                    Response.Redirect("shopping.aspx", false);
-                }
+                //if (Request.QueryString["operation"].Equals("removeItem"))
+                //{
+                //    curCart.remItem(Request.QueryString["productID"]);
+                //    Response.Redirect("shopping.aspx", false);
+                //}
             }
             else
             {

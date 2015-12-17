@@ -29,7 +29,7 @@ public class ShoppingCart
         return true;
     }
 
-    public void remItem(string ProdID)
+   /* public void remItem(string ProdID)
     {
         for(int i = 0; i< productID.Count; i++)
         {
@@ -37,10 +37,9 @@ public class ShoppingCart
             {
                 productID.RemoveAt(i);
                 productQuantity.RemoveAt(i);
-                break;
             }
         }
-    }
+    } */
 
     public string showCart() 
     {
@@ -59,8 +58,8 @@ public class ShoppingCart
                         retValue += "<tr>"
                             + "<td>" + prodRecords["Types"] + "</td> "
                             + "<td>" + productQuantity[i] + "</td> "
-                            + "<td>" + prodRecords["Price"] + "</td> "
-                            + "<td><a href='shopping.aspx?operation=removeItem&productID="+ productID[i] + ">Remove</a>" +"</td>";
+                            + "<td>" + prodRecords["Price"] + "</td> ";
+                           // + "<td><a href='shopping.aspx?operation=removeItem&productID="+ productID[i] + ">Remove</a>" +"</td>";
                         retValue += "</tr>";
 
                         total += Convert.ToDouble(prodRecords["Price"]) * Convert.ToInt16(productQuantity[i]);
