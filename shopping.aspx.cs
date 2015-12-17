@@ -14,9 +14,9 @@ public partial class shoppingCart : System.Web.UI.Page
         {
             if (Session["savedCart"] != null)
             {
-                //curCart = (ShoppingCart)Session["savedCart"];
-                //curCart.showCart();
-                //CartBody.Text += curCart.showCart();
+                curCart = (ShoppingCart)Session["savedCart"];
+                curCart.showCart();
+                CartBody.Text += curCart.showCart();
                 //if (Request.QueryString["operation"].Equals("removeItem"))
                 //{
                 //    curCart.remItem(Request.QueryString["productID"]);
